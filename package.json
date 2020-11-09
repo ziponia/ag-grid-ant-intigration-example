@@ -1,0 +1,19 @@
+{
+  "name": "root",
+  "private": true,
+  "scripts": {
+    "dev": "npx lerna run dev --parallel"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.12.1",
+    "@babel/node": "^7.12.6",
+    "@babel/preset-env": "^7.12.1",
+    "@types/shortid": "^0.0.29",
+    "lerna": "^3.22.1",
+    "nodemon": "^2.0.6"
+  },
+  "dependencies": {
+    "@kubycrm/frontend": "file:packages/frontend",
+    "@kubycrm/server": "file:packages/server"
+  }
+}
