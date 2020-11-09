@@ -7,7 +7,7 @@ export function* fetchUser() {
   yield put(actionTypes.FETCH_USER_SUCCESS, data);
 }
 
-export function* takeFetchUser() {
+export function* takeFetchUser(payload = {}) {
   yield takeLatest(actionTypes.FETCH_UESR, fetchUser);
 }
 
